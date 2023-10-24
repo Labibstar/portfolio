@@ -6,7 +6,7 @@ import bg7 from '../public/images/bg7.jpg'
 import bg2 from '../public/images/bg2.jpg'
 import bg8 from '../public/images/bg8.jpg'
 import React , {useRef, useState, useCallback} from 'react';
-import HorizontalScroll from 'react-scroll-horizontal'
+
 
 
 export default function Home() {
