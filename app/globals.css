@@ -63,3 +63,7 @@ body {
   font-size: x-large;
   font-weight: bold;
 }
+
+.bgo{
+  transform: translate(1);
+}
