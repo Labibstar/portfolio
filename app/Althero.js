@@ -3,7 +3,7 @@ export function Althero({
   
   bgsrc
 }) {
-  return <div id="sec2" className="h-screen w-screen grid text-center bg-local w-screen place-content-center bg-cover" style={{
+  return <div id="sec2" className="h-screen w-screen grid text-center bg-fixed w-screen place-content-center bg-cover" style={{
     backgroundImage: `url(${bgsrc.src})`,
     height: "100vh"}}>
         <h1 style={{

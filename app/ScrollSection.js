@@ -4,6 +4,7 @@ import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
 import bg7 from '../public/images/bg7.jpg'
 import bg2 from '../public/images/bg2.jpg'
 import bg8 from '../public/images/bg8.jpg'
+import ThreeScene from "./ThreeScene";
 
 function ScrollSection({}) {
     
@@ -48,6 +49,7 @@ useEffect(()=>{
                         </div>
                         <div className="scroll-section bg-cover" style={{backgroundImage: `url(${bg8.src})`}}>
                             <h3>Project 2</h3>
+                            <ThreeScene />
                         </div>
                         <div className="scroll-section bg-cover" style={{backgroundImage: `url(${bg2.src})`}}>
                             <h3>Project 3</h3>

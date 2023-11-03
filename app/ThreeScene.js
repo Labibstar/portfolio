@@ -16,9 +16,14 @@ const ThreeScene = () => {
         const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
         const cube = new THREE.Mesh(geometry, material);
         scene.add(cube);
-
 // Render the scene and camera
+const renderScene = () => {
+  cube.rotation.x += 0.01;
+  cube.rotation.y += 0.01;
   renderer.render(scene, camera);
+  requestAnimationFrame(renderScene);
+};
+renderScene();
       }
     }, []);
     return <div ref={containerRef} />;

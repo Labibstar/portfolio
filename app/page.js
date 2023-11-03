@@ -23,8 +23,6 @@ export default function Home() {
   return (
 
     <main>
-     
-      <title>Sample</title>
 
       <Hero bgsrc ={bg1} />
      
@@ -33,6 +31,7 @@ export default function Home() {
       <ScrollSection />
      
       <Contact/>
+    
 
     </main>
   )

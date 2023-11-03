@@ -65,5 +65,5 @@ body {
 }
 
 .bgo{
-  transform: translate(1);
+  transform: scale(1);
 }
