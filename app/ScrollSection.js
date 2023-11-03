@@ -10,11 +10,9 @@ function ScrollSection({}) {
     const sectionRef = useRef(null);
     const triggerRef = useRef(null);
 
+    gsap.registerPlugin(ScrollTrigger);
 
-
-gsap.registerPlugin(ScrollTrigger);
-
-useEffect(()=>{
+    useEffect(()=>{
         const pin = gsap.fromTo(sectionRef.current,{
             translateX: 0
         },{
@@ -30,7 +28,7 @@ useEffect(()=>{
                } 
 
         })
-        
+
         return ()=>{
             pin.kill();
         }
@@ -38,12 +36,11 @@ useEffect(()=>{
     }, [])
 
 
-    
     return(
            <div className="scroll-section-outer">
                 <div ref={triggerRef}>
                     <div ref={sectionRef} className="scroll-section-inner">
-                    <div className="scroll-section bg-cover text-end" style={{backgroundImage: `url(${bg7.src})`, justifyContent: "start", alignItems: 'flex-start'}} >
+                    <div className="scroll-section bg-cover text-end" style={{backgroundImage: `url(${bg7.src})`, justifyContent: "end", alignItems: 'flex-start'}} >
                             <h3 style={{ textAlign: "right", marginRight: "8rem" }}>Project 1</h3>
                         </div>
                         <div className="scroll-section bg-cover" style={{backgroundImage: `url(${bg8.src})`}}>

@@ -10,28 +10,53 @@ import Hero from './Hero';
 import { Althero } from './Althero';
 import ScrollSection from './ScrollSection';
 import Contact from './contact';
-import ThreeScene from './ThreeScene';
-import dynamic from 'next/dynamic';
 
 export default function Home() {
 
-  
- 
-  // Client Components:
+  const ref0 = useRef(null);
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const refend = useRef(null);
+
+  const handleScroll = (e, refnext, refprev) => {
+
+    console.log("refnext " + refnext.current.id + " refprev " + refprev.current.id);
+
+    console.log(e.deltaY);
+
+
+    if (e.deltaY > 0) {
+      if (refnext.current.id != "contact") {
+        refnext.current.scrollIntoView();
+      }
+      else {
+        console.log("moving to contact");
+      }
+    }
+    else {
+
+      if (refprev.current.id != "sec2") {
+        refprev.current.scrollIntoView();
+      }
+      else {
+        console.log("moving to sec2")
+      }
+    }
+  }
+
 
 
   return (
 
     <main>
-     
       <title>Sample</title>
 
       <Hero bgsrc ={bg1} />
-     
       <Althero bgsrc={bg6}   />
-     
+
       <ScrollSection />
-     
+
       <Contact/>
 
     </main>
