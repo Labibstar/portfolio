@@ -24,7 +24,7 @@ export default function Home() {
 
     <main>
 
-      <Hero bgsrc ={bg1} />
+      <ThreeScene />
      
       <Althero bgsrc={bg6}   />
      

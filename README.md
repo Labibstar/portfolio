@@ -2,8 +2,8 @@
 
 ## Projects you will find here
 
-AudioUnlock
+AudioUnlock(React Native & React)
 
-Footymap
+Tic-Tac-Toe(made in Angular)
 
-Python Automations
+E-commerce app(PHP)

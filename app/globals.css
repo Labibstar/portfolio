@@ -66,4 +66,25 @@ body {
 
 .bgo{
   transform: scale(1);
+  background-position-y: 40%;
+}
+
+.bg3{
+  transform: scale(1);
+  background-position-y: 30%;
+}
+
+.info {
+	position: absolute;
+	top: 35%;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	display:block;
+}
+
+#container{
+  top: 15%;
+  display: block;
+  left: 5%;
 }

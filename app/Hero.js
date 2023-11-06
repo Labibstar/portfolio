@@ -1,4 +1,5 @@
 import React from "react";
+import ThreeScene from "./ThreeScene";
 
 function Hero({
   bgsrc,
@@ -7,13 +8,16 @@ function Hero({
 
 }) {
   return (
-  <div id="sec1" className="hero h-screen grid grid-cols-2 bg-contain place-content-center">
-
+  <div id="sec1" className="h-screen w-screen">
+    <ThreeScene />
+{/* 
     <div className="grid text-center place-content-center">
       <h1 style={{
         position: "relative",
-        zIndex: 2
-      }}>placeholdertext0</h1>
+        zIndex: 2,
+        fontSize: 48,
+        fontFamily: 'sans-serif'
+      }}>Hi</h1>
     </div>
     <div className="bgo grid text-center place-content-center bg-cover bg-no-repeat" style={{
         backgroundImage: `url(${bgsrc.src})`,
@@ -22,9 +26,14 @@ function Hero({
         <h1 style={{
         position: "relative",
         zIndex: 2,
-        color: 'black'
-        }}>placeholder text1</h1>
+        color: 'black',
+        fontSize: 32,
+        fontFamily: 'sans-serif'
+        }}>I'm Labib</h1>
         </div>
+      */}
+
+
   </div>
    
    );
