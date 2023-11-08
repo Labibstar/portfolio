@@ -1,12 +1,12 @@
 'use client'
 
-import bg6 from '../public/images/bg6.jpg'
+
 import bg1 from '../public/images/bg1.jpg'
 import bg7 from '../public/images/bg7.jpg'
 import bg2 from '../public/images/bg2.jpg'
 import bg8 from '../public/images/bg8.jpg'
 import React, { useRef } from 'react';
-import Hero from './Hero';
+
 import { Althero } from './Althero';
 import ScrollSection from './ScrollSection';
 import Contact from './contact';
@@ -22,11 +22,11 @@ export default function Home() {
 
   return (
 
-    <main>
+    <main className='scrollbar-hide'>
 
       <ThreeScene />
      
-      <Althero bgsrc={bg6}   />
+      <Althero />
      
       <ScrollSection />
      

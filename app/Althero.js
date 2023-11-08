@@ -1,16 +1,16 @@
 import React from "react";
-export function Althero({
-  
-  bgsrc
-}) {
+import bg6 from '../public/images/bg6.jpg'
+export function Althero(
+) {
   return <div id="sec2" className="h-screen w-screen grid text-start bg-fixed w-screen place-content-start bg-cover" style={{
-    backgroundImage: `url(${bgsrc.src})`,
-    height: "100vh"}}>
+    backgroundImage: `url(${bg6.src})`,
+    height: "100vh",
+    zIndex: 100}}>
         <h1 style={{
         position: "relative",
         marginTop: "25%",
         marginLeft: "6%",
-        zIndex: 2,
+        zIndex: 102,
         color: 'black',
         fontSize: 18,
         fontFamily: 'sans-serif'
