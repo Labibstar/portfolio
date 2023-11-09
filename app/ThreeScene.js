@@ -44,7 +44,7 @@ const ThreeScene = () => {
     
           const loader = new GLTFLoader();
     
-          loader.load( '/images/boy-with-sky/source/BoyWithSkyline.glb', function ( gltf ) {
+          loader.load( 'https://personal-364407475.imgix.net/boy-with-sky/source/BoyWithSkyline.glb', function ( gltf ) {
             
             const myModel= gltf.scene;
             scene.add(myModel );

@@ -63,7 +63,7 @@ useEffect(()=>{
                             
 
 
-                            <h3 className="justify-left text-black"> <Image className="mt-16 ml-5 mb-4 "  src="/images/audiounlock/logo.png" alt="logo" width={80} height={80} style={{width: 80, height:80, borderRadius:100}}/>AudioUnlock <br/></h3>
+                            <h3 className="justify-left text-black"> <Image className="mt-16 ml-5 mb-4 "  src="https://personal-364407475.imgix.net/audiounlock/logo.png" alt="logo" width={80} height={80} style={{width: 80, height:80, borderRadius:100}}/>AudioUnlock <br/></h3>
                             <p className="text-black" >
                                 <b></b><br/>
                                 A common practice among young smart phone users is that we often put our phones on silent.<br/>
@@ -77,7 +77,7 @@ useEffect(()=>{
                                 </p>
                             </div>
                             <div>
-                             <Image className="mt-16 ml-36 mb-0" src="/images/audiounlock/LocationPage.jpg" alt="logo" width={280} height={1100} style={{width: 340, height:700}} />
+                             <Image className="mt-16 ml-36 mb-0" src="https://personal-364407475.imgix.net/audiounlock/LocationPage.jpg" alt="logo" width={280} height={1100} style={{width: 340, height:700}} />
                             </div>
                                
                              </div>   
@@ -94,7 +94,7 @@ useEffect(()=>{
                                 Feel free to play here</p>
                             </div>     
                             <div>
-                                <Image className="mt-16 ml-56 mb-0" src="/images/tick/image1.png" alt="tick" width={265} height={143} style={{width: 265, height:325,   borderRadius: "15%"}} />
+                                <Image className="mt-16 ml-56 mb-0" src="https://personal-364407475.imgix.net/tick/image1.png" alt="tick" width={265} height={143} style={{width: 265, height:325,   borderRadius: "15%"}} />
                             </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@ useEffect(()=>{
                                 Built in PHP, AJAX and Bootstrap.
                             </p>
                             </div>    
-                            <Image className="mt-16 ml-28 mb-0" src="/images/shop/hero.png" alt="tick" width={465} height={243} style={{width: 465, height:343,  borderRadius: "5%", marginBottom: 0, position: "relative", zIndex: 0}} />
+                            <Image className="mt-16 ml-28 mb-0" src="https://personal-364407475.imgix.net/shop/hero.png" alt="tick" width={465} height={243} style={{width: 465, height:343,  borderRadius: "5%", marginBottom: 0, position: "relative", zIndex: 0}} />
 
                             </div>
                         </div>
