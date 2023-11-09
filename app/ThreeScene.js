@@ -7,6 +7,7 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 const ThreeScene = () => {
     const containerRef = useRef(null);
     
+    const [loaded, setLoaded] = useState(false);
    
     
       
@@ -48,6 +49,7 @@ const ThreeScene = () => {
             
             const myModel= gltf.scene;
             scene.add(myModel );
+            setLoaded(true);
             
           }, undefined, function ( error ) {
     
