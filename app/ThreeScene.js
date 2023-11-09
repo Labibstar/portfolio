@@ -18,10 +18,7 @@ const ThreeScene = () => {
         const camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 1000);
         const renderer = new THREE.WebGLRenderer();
           renderer.outputColorSpace = THREE.SRGBColorSpace;
-          
           renderer.setSize(window.innerWidth, window.innerHeight);
-          
-          console.log(containerRef.current);
           renderer.setPixelRatio(window.devicePixelRatio);
     
           containerRef.current?.appendChild(renderer.domElement);
@@ -43,7 +40,7 @@ const ThreeScene = () => {
           const spotlight = new THREE.AmbientLight(0xffffff,1);
           spotlight.position.set(0,25,0);
           scene.add(spotlight);
-    
+   
     
           const loader = new GLTFLoader();
     
@@ -84,15 +81,15 @@ const ThreeScene = () => {
             <div className='info3 grid grid-cols-3'>
             <p>
 
-            <svg class="w-6 h-6 ml-96 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13"/>
+            <svg className="w-6 h-6 ml-96 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13"/>
 </svg> </p>
 <p>
  Click and Drag to explore the sunset
  </p>
  <p className='align-items-end'>
-<svg class="w-6 h-6 text-gray-800 mr-96 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"/>
+<svg className="w-6 h-6 text-gray-800 mr-96 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"/>
 </svg>
             </p>
             </div>
