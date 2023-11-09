@@ -89,9 +89,9 @@ useEffect(()=>{
 
                             <div className="ml-56 h-9 place-content-end justify-items-right text-center">
                             <h3 className="bg-green-600 bg-opacity-75 text-center mr-48">Tic-Tac-Toe</h3>
-                            <p className="bg-green-600 bg-opacity-75 ml-124">A plain old Tic-Tac-Toe. Only catch is it's made in Angular in under 24hrs<br/> 
-                                with no prior experience with Angular. Just a little testament to my adaptability <br/> 
-                                Feel free to play here</p>
+                            <p className="bg-green-600 bg-opacity-75 ml-124">A plain old Tic-Tac-Toe. Only catch is it's made in Angular in under 12hrs<br/> 
+                                with <b>no prior experience</b> with Angular. Just a little testament to my adaptability <br/> 
+                                </p>
                             </div>     
                             <div>
                                 <Image className="mt-16 ml-56 mb-0" src="https://personal-364407475.imgix.net/tick/image1.png" alt="tick" width={265} height={143} style={{width: 265, height:325,   borderRadius: "15%"}} />
