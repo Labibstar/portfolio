@@ -2,12 +2,13 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://labibstar.github.io/portfolio/",
+  "homepage": "app/page.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
