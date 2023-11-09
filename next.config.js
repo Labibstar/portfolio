@@ -3,7 +3,9 @@ const nextConfig = {
     output: 'export',
     images: { 
         loader: 'imgix',
-    path: 'personal-364407475' }
+    path: 'personal-364407475',
+    unoptimized: true
+ }
 }
 
 module.exports = nextConfig
