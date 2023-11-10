@@ -101,7 +101,7 @@ useEffect(()=>{
                                 Built in PHP, AJAX and Bootstrap.
                             </p>
                             </div>    
-                            <Image className="mt-16 ml-28 mb-0" src="https://personal-364407475.imgix.net/shop/hero.webp" alt="tick" width={465} height={243} style={{width: 465, height:343,  borderRadius: "5%", marginBottom: 0, position: "relative", zIndex: 0}} />
+                            <Image className="mt-16 ml-28 mb-0" src="https://personal-364407475.imgix.net/shop/hero.webp" alt="tick" width={465} height={243} style={{width: 665, height:'auto',  borderRadius: "5%", marginBottom: 0, position: "relative", zIndex: 0}} />
 
                             </div>
                         </div>

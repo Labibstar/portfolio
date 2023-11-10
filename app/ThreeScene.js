@@ -113,7 +113,7 @@ const renderLoaded =(
             
             
             <p className='info'>
-              Hi. I'm Labib.
+              Hi, I'm Labib.
             </p>
 
             <p className='info2'>
