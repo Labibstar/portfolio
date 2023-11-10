@@ -55,7 +55,7 @@ useEffect(()=>{
                     <div className="scroll-section bg-cover text-left" style={{backgroundImage: `url(${bg2.src})`, justifyContent: "start", alignItems: 'flex-start'}} >
                             <div className="grid grid-cols-2 text-left ml-48">
                             <div>
-                            <h3 className="justify-left text-black"> <Image className="mt-16 ml-5 mb-4 "  src="https://personal-364407475.imgix.net/audiounlock/logo.webp" alt="logo" width={80} height={80} style={{width: 80, height:80, borderRadius:100}}/>AudioUnlock <br/></h3>
+                            <h3 className="justify-left text-black"> <Image className="mt-16 ml-5 mb-4 "  src="https://personal-364407475.imgix.net/audiounlock/logo.webp" alt="logo" width={80} height={80} style={{width: 80, height:'auto', borderRadius:100}}/>AudioUnlock <br/></h3>
                             <p className="text-black" >
                                 <b></b><br/>
                                 A common practice among young smart phone users is that we often put our phones on silent.<br/>
@@ -92,7 +92,7 @@ useEffect(()=>{
                         </div>
                         <div className="scroll-section scrollbar-hide bg-cover bg3 text-black" style={{backgroundImage: `url(${bg9.src})`}}>
                             <div className="grid grid-cols-2">
-                            <div className="ml-24">
+                            <div className="ml-[10rem]">
                            
                             <h3>Project 3</h3>
                             <p>Of course no portfolio is complete without a full-stack e-commerce app. <br/>
