@@ -53,15 +53,8 @@ useEffect(()=>{
                 <div ref={triggerRef}>
                     <div ref={sectionRef} className="scroll-section-inner scrollbar-hide">
                     <div className="scroll-section bg-cover text-left" style={{backgroundImage: `url(${bg7.src})`, justifyContent: "start", alignItems: 'flex-start'}} >
-                            <div className="grid grid-cols-2 textproject1 text-left ml-24">
+                            <div className="grid grid-cols-2 text-left ml-48">
                             <div>
-
-                            
-                            
-                           
-                            
-
-
                             <h3 className="justify-left text-black"> <Image className="mt-16 ml-5 mb-4 "  src="https://personal-364407475.imgix.net/audiounlock/logo.webp" alt="logo" width={80} height={80} style={{width: 80, height:80, borderRadius:100}}/>AudioUnlock <br/></h3>
                             <p className="text-black" >
                                 <b></b><br/>
@@ -88,12 +81,12 @@ useEffect(()=>{
 
                             <div className="ml-56 h-9 place-content-end justify-items-right text-center">
                             <h3 className="bg-green-600 bg-opacity-75 text-center mr-48">Tic-Tac-Toe</h3>
-                            <p className="bg-green-600 bg-opacity-75 ml-124">A plain old Tic-Tac-Toe. Only catch is it's made in Angular in under 12hrs<br/> 
+                            <p className="bg-green-600 bg-opacity-75 ml-124 text-white">A plain old Tic-Tac-Toe. Only catch is it's made in Angular in under 12hrs<br/> 
                                 with <b>no prior experience</b> with Angular. Just a little testament to my adaptability <br/> 
                                 </p>
                             </div>     
                             <div>
-                                <Image className="mt-16 ml-56 mb-0" src="https://personal-364407475.imgix.net/tick/image1.webp" alt="tick" width={265} height={143} style={{width: 265, height:325,   borderRadius: "15%"}} />
+                                <Image className="mt-16 ml-56 mb-0" src="https://personal-364407475.imgix.net/tick/image1.webp" alt="tick" width={250} height={1430} style={{width:250, height: 'auto',  borderRadius: "15%"}} />
                             </div>
                             </div>
                         </div>
