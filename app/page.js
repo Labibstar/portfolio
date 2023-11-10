@@ -22,9 +22,9 @@ export default function Home() {
      
       <Althero />
      
-      <ScrollSection />
+      <ScrollSection/>
      
-      <Contact/>
+      <Contact />
     
 
     </main>
