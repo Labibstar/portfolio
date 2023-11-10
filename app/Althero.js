@@ -1,5 +1,5 @@
 import React from "react";
-import bg6 from '../public/images/bg6.jpg'
+import bg6 from '../public/images/bg6.webp'
 export function Althero(
 ) {
   return <div id="sec2" className="h-screen w-screen grid text-start bg-fixed w-screen place-content-start bg-cover" style={{
