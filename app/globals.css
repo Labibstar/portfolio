@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0,0,0;
+  --background-end-rgb: 0,0,0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -79,7 +79,7 @@ body {
 .info {
 	position: absolute;
 	top: 35%;
-  right: 20%;
+  right: 25%;
 	width: 100%;
 	text-align: center;
 	z-index: 100;
@@ -91,7 +91,7 @@ body {
 .info2 {
 	position: absolute;
 	top: 35%;
-  left: 22%;
+  left: 27%;
 	width: 100%;
 	text-align: center;
 	z-index: 100;

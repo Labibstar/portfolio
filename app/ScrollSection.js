@@ -20,7 +20,7 @@ useEffect(()=>{
         const pin = gsap.fromTo(sectionRef.current,{
             translateX: 0
         },{
-               translateX: "-3276px",
+               translateX: "-230vw",
                ease: "none",
                duration: 1,
                scrollTrigger:{
