@@ -10,7 +10,7 @@ export function Contact({
         
         <div className="contact1 text-end">
           <p ><b> Get in Touch </b> </p>
-          <div className="ml-4">
+          <div className="ml-7">
 
             <div className="grid grid-cols-3 ml-7 mt-2">
 

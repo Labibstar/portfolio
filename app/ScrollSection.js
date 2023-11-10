@@ -3,7 +3,7 @@ import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
 import bg7 from '../public/images/bg7.webp';
 import bg9 from '../public/images/bg9.webp';
-import bg8 from '../public/images/gif2.gif';
+import bg8 from '../public/images/gif2.webp';
 import Image from "next/image";
 
 function ScrollSection({}) {
