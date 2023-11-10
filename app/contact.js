@@ -8,9 +8,9 @@ export function Contact({
       height: "100vh",
     zIndex:-1}}>
         
-        <div className="contact1 text-end">
+        <div className="contact1 text-center">
         <p ><b> Get in Touch </b> </p>
-        <div className="ml-4">
+        
 
         <div className="grid grid-cols-3 ml-7 mt-2">
 
@@ -35,7 +35,7 @@ export function Contact({
           </svg>
           </a>
         </div>
-         </div>
+        
 
 
         </div>
