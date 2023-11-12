@@ -8,8 +8,9 @@ const ThreeScene = () => {
     const containerRef = useRef(null);
     
     const [loaded, setLoaded] = useState(false);
-       
-      
+    
+    
+
       useEffect(() => {
 
         
@@ -21,7 +22,7 @@ const ThreeScene = () => {
           renderer.setPixelRatio(window.devicePixelRatio);
     
           containerRef.current?.appendChild(renderer.domElement);
-          camera.position.set(0,0,12);
+          camera.position.set(0,0.6,12);
           camera.lookAt(0,0,0);
           
           const controls = new OrbitControls( camera, renderer.domElement );
@@ -30,30 +31,73 @@ const ThreeScene = () => {
           controls.minAzimuthAngle = -0.2;
           controls.maxAzimuthAngle = 0.2;
           controls.minPolarAngle = 1.35;
-          controls.maxPolarAngle = 1.6;
+          controls.maxPolarAngle = 1.65;
           controls.autoRotate =false;
           controls.enableZoom =false;
           controls.target = new THREE.Vector3(0,1,0);
           controls.update();        
 
-          /*const spotlight = new THREE.AmbientLight(0xffffff,1);
+          /* Lights
+          const spotlight = new THREE.AmbientLight(0xffffff,1);
           spotlight.position.set(0,25,0);
           scene.add(spotlight);
-          |   
-          */
+             
+          
           const spotlight = new THREE.SpotLight(0xffffff, 0.7);
           spotlight.position.set(0,4, 1);
           scene.add(spotlight);
           
-          const rectlight = new THREE.RectAreaLight(0xffffff, 1.5, 200, 200);
+          const rectlight = new THREE.RectAreaLight(0xffffff, 0.8, 200, 200);
           rectlight.position.set(0,2, -2.1);
-          scene.add(rectlight);
-   
+        scene.add(rectlight);
+          */
+     /* 
+          
+          const id ="b30c506a-1a23-4967-96e9-bac4f6e9f38e";
+          const url ="https://api.echo3d.com/query?key=cold-limit-1182&entry="+id;
 
+          function loadModel(url, id) {
+            var json = "";
+	          function request(){http.get(url , function(responseJSON) {
+            console.log(responseJSON);
+	   
+            });
+            
+          }
+            request();
+          }
+            /* pulls models from echoAR database and downloads them into scene using GLTFLoader
+               // var loader = new GLTFLoader();
 
+               // loader.load(url, function (x) {
+               //   console.log(x);
+                   //console.log(gltf);
+                     //models.set(id, {hologram: gltf.scene, direction: null});  
+                  //   console.log(models); 
+
+                  //  scene.add(gtlf.scene );
+                  //  setLoaded(true);
+                    
+                }, function (xhr) {
+                    console.log(xhr);
+                    console.log((xhr.loaded/xhr.total*100) + '% loaded');
+
+                }, function ( error ) {
+
+                    console.error( error );
+
+                } );
+            }
+*/
+      //    loadModel(url,id);    
+          
+        
+
+      
+          
           const loader = new GLTFLoader();
     
-          loader.load( 'https://personal-364407475.imgix.net/boy-with-sky/source/BoyWithSkyline.glb', function ( gltf ) {
+          loader.load( '/images/boy-with-sky/scene.gltf', function ( gltf ) {
             
             const myModel= gltf.scene;
             scene.add(myModel );
@@ -65,6 +109,8 @@ const ThreeScene = () => {
     
           } );
      
+      
+
           function animate(){
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
