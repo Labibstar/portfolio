@@ -99,8 +99,8 @@ body {
 }
 
 .info {
-	position: absolute;
-	top: 35%;
+	position: relative;
+	top: 15rem;
   right: 25%;
 	width: 100%;
 	text-align: center;
@@ -111,8 +111,8 @@ body {
 }
 
 .info2 {
-	position: absolute;
-	top: 35%;
+	position: relative;
+	top: 13rem;
   left: 27%;
 	width: 100%;
 	text-align: center;
@@ -122,8 +122,8 @@ body {
 }
 
 .info3 {
-	position: absolute;
-	top: 85%;
+	position: relative;
+	top: 35rem;
 	width: 100%;
 	text-align: center;
 	z-index: 100;	
