@@ -16,6 +16,7 @@
     "react": "^18",
     "react-dom": "^18",
     "sharp": "^0.32.6",
+    "swiper": "^11.2.10",
     "tailwind-scrollbar-hide": "^1.1.7",
     "three": "^0.158.0"
   },
