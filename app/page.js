@@ -18,11 +18,10 @@ export default function Home() {
 
     <main path="/">
 
-      <Althero />
       <ThreeScene />
      
+      <Althero />
       
-     
       <Experience/>
      
       <ScrollSection/>
