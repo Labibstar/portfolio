@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,6 +28,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: 'Oswald', sans-serif;
     
 }
 
@@ -35,6 +38,25 @@ body {
   text-align: center;
   
 
+}
+
+.althero{
+  position: relative;
+  margin-top: 10rem;
+  margin-left: 6rem;
+  z-index: 102;
+  color: black;
+  font-size: 18;
+}
+
+.experience{
+  position: relative;
+  margin-top: 10rem;
+  margin-left: 6rem;
+  z-index: 102;
+  color: white;
+  font-size: 18;
+      
 }
 
 .scroll-section-outer {

@@ -6,18 +6,13 @@ export function Althero(
     backgroundImage: `url(${bg6.src})`,
     height: "100vh",
     zIndex: 100}}>
-        <h1 style={{
-        position: "relative",
-        marginTop: "25%",
-        marginLeft: "6%",
-        zIndex: 102,
-        color: 'black',
-        fontSize: 18,
-        fontFamily: 'sans-serif'
-      }}>
-          <b>I develop, grow and speak about products.</b> <br/><br/>
-          Currently a Developer Evangelist operating in the SaaS industry ; <br/>
-          Growing <a href="https://dev.applink.com.bd/" target="_blank" ><b>Applink: Banglalink's Innovation platform</b></a> from zero-to-eight figures</h1>
+        <h1 className="althero">
+          <b style={{fontSize: 24}}>I lead, leverage and deliver transformative initiatives for businesses.</b> <br/><br/>
+          <b>Currently a Project manager in the E-commerce space; <br/>
+          Transforming multiple businesses at a time with strategy, roadmaps and execution <br/>
+          </b>
+          </h1>
+
     </div>;
 }
   
