@@ -1,7 +1,8 @@
 'use client'
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import ParticleScene from './ParticleScene';
+import { track } from './analytics';
 import seabagsImg from '../public/stores/seabags.jpg';
 import duluthpackImg from '../public/stores/duluthpack.jpg';
 import craftcellarsImg from '../public/stores/craftcellars.jpg';
@@ -62,6 +63,25 @@ const setAccent = (on) =>
   window.dispatchEvent(new CustomEvent('particle-accent', { detail: on }));
 
 export default function Home() {
+  const contactRef = useRef(null);
+
+  // fire once when the visitor actually reaches the contact section
+  useEffect(() => {
+    const el = contactRef.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          track('reached-contact');
+          obs.disconnect();
+        }
+      },
+      { threshold: 0.5 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
   return (
     <main>
       <ParticleScene />
@@ -105,6 +125,7 @@ export default function Home() {
           rel="noreferrer"
           onMouseEnter={() => setAccent(true)}
           onMouseLeave={() => setAccent(false)}
+          onClick={() => track('work-click', { item: 'Sea Bags case study' })}
         >
           <span className="badge">{featured.badge}</span>
           <h3>{featured.title} ↗</h3>
@@ -119,7 +140,12 @@ export default function Home() {
               onMouseLeave={() => setAccent(false)}
             >
               {item.href ? (
-                <a href={item.href} target="_blank" rel="noreferrer">
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => track('work-click', { item: item.title })}
+                >
                   <h3>{item.title} ↗</h3>
                   <p>{item.detail}</p>
                 </a>
@@ -146,6 +172,7 @@ export default function Home() {
               rel="noreferrer"
               onMouseEnter={() => setAccent(true)}
               onMouseLeave={() => setAccent(false)}
+              onClick={() => track('store-click', { store: store.name })}
             >
               <img src={store.img} alt={`${store.name} storefront`} loading="lazy" />
               <figcaption>
@@ -157,13 +184,32 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="contact">
+      <section className="contact" ref={contactRef}>
         <p className="kicker">Contact</p>
         <h2>Let&apos;s build something.</h2>
         <div className="links">
-          <a href="mailto:labibstar@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/labib-bin-rahman-751106217/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://github.com/Labibstar/" target="_blank" rel="noreferrer">GitHub</a>
+          <a
+            href="mailto:labibstar@gmail.com"
+            onClick={() => track('contact-click', { channel: 'email' })}
+          >
+            Email
+          </a>
+          <a
+            href="https://www.linkedin.com/in/labib-bin-rahman-751106217/"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => track('contact-click', { channel: 'linkedin' })}
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/Labibstar/"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => track('contact-click', { channel: 'github' })}
+          >
+            GitHub
+          </a>
         </div>
 
         <footer className="site-footer">
