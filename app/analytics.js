@@ -8,7 +8,7 @@
 //
 // Self-hosting instead? Also change UMAMI_SRC to your instance's script URL.
 
-export const UMAMI_WEBSITE_ID = 'REPLACE_WITH_YOUR_UMAMI_WEBSITE_ID';
+export const UMAMI_WEBSITE_ID = 'ca992976-13a6-450b-a2ec-f2228491825d';
 export const UMAMI_SRC = 'https://cloud.umami.is/script.js';
 
 // Fire a custom event. No-op if the script is blocked, still loading,
